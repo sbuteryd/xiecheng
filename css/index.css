@@ -1,4 +1,64 @@
-@import 'common.css';
+html {
+  font-size: 50px;
+}
+@media screen and (min-wdith: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+  body {
+    background: pink !important;
+  }
+}
+@media screen and (min-wdith: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-wdith: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-wdith: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-wdith: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-wdith: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-wdith: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-wdith: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-wdith: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-wdith: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-wdith: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
 body {
   min-width: 320px;
   width: 15rem;
@@ -8,6 +68,7 @@ body {
   background: #f2f2f2;
 }
 .search-container {
+  display: flex;
   position: fixed;
   top: 0;
   left: 50%;
@@ -15,4 +76,19 @@ body {
   width: 15rem;
   height: 1.76rem;
   background: #ffc002;
+}
+.search-container .classify {
+  width: 0.88rem;
+  height: 1.4rem;
+  background: purple;
+  margin: 0.22rem 0.5rem 0.14rem 0.48rem;
+}
+.search-container .search {
+  flex: 1;
+}
+.search-container .login {
+  width: 1.5rem;
+  height: 1.4rem;
+  margin: 0.2rem;
+  background: #000;
 }

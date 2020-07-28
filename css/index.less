@@ -1,4 +1,88 @@
-@import 'common.css';
+html {
+    font-size: 50px;
+}
+
+// @media screen and (min-width: 320px) {
+//     html {
+//         font-size: 21.33333333px;
+//     }
+
+//     body {
+//         background: pink !important;
+//     }
+// }
+
+@media screen and (min-wdith: 320px) {
+    html {
+        font-size: 21.33333333px;
+    }
+
+    body {
+        background: pink !important;
+    }
+}
+
+@media screen and (min-wdith: 360px) {
+    html {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-wdith: 375px) {
+    html {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-wdith: 384px) {
+    html {
+        font-size: 25.6px;
+    }
+}
+
+@media screen and (min-wdith: 400px) {
+    html {
+        font-size: 26.66666667px;
+    }
+}
+
+@media screen and (min-wdith: 414px) {
+    html {
+        font-size: 27.6px;
+    }
+}
+
+@media screen and (min-wdith: 424px) {
+    html {
+        font-size: 28.26666667px;
+    }
+}
+
+@media screen and (min-wdith: 480px) {
+    html {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-wdith: 540px) {
+    html {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-wdith: 720px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-wdith: 750px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@basefont: 50;
 
 body {
     min-width: 320px;
@@ -11,12 +95,30 @@ body {
 }
 
 .search-container {
+    display: flex;
     position: fixed;
     top: 0;
     left: 50%;
     transform: translate(-50%);
-    width: 750rem / 50;
-    height: 88rem / 50;
+    width: 750rem / @basefont;
+    height: 88rem / @basefont;
     background: #ffc002;
 
+    .classify {
+        width: 44rem / @basefont;
+        height: 70rem / @basefont;
+        background: purple;
+        margin: 11rem / @basefont 25rem / @basefont 7rem / @basefont 24rem / @basefont;
+    }
+
+    .search {
+        flex: 1
+    }
+
+    .login {
+        width: 75rem / @basefont;
+        height: 70rem / @basefont;
+        margin: 10rem / @basefont;
+        background: #000;
+    }
 }
