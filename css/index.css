@@ -72,3 +72,19 @@ body {
 .ad a img {
   width: 100%;
 }
+nav a {
+  float: left;
+  width: 3rem;
+  height: 2.8rem;
+  text-align: center;
+}
+nav a img {
+  display: block;
+  margin: 0.2rem auto 0;
+  width: 1.64rem;
+  height: 1.64rem;
+}
+nav a span {
+  font-size: 0.5rem;
+  color: #333;
+}
