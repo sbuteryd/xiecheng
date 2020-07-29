@@ -1,4 +1,7 @@
 @import 'common.css';
+a {
+  text-decoration: none;
+}
 body {
   min-width: 320px;
   width: 15rem;
@@ -22,13 +25,29 @@ body {
   height: 1.4rem;
   background: purple;
   margin: 0.22rem 0.5rem 0.14rem 0.48rem;
+  background: url('../images/classify.png') no-repeat;
+  background-size: 0.88rem 1.4rem;
 }
 .search-container .search {
   flex: 1;
+}
+.search-container .search input {
+  width: 100%;
+  outline: none;
+  border: none;
+  margin-top: 0.24rem;
+  border-radius: 0.66rem;
+  padding-left: 1.1rem;
+  height: 1.32rem;
+  background: pink;
+  font-size: 0.5rem;
 }
 .search-container .login {
   width: 1.5rem;
   height: 1.4rem;
   margin: 0.2rem;
-  background: #000;
+  font-size: 0.4rem;
+  line-height: 1.4rem;
+  text-align: center;
+  color: #fff;
 }

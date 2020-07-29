@@ -1,6 +1,8 @@
 @import 'common.css';
 
-
+a {
+    text-decoration: none;
+}
 
 @basefont: 50;
 
@@ -29,16 +31,33 @@ body {
         height: 70rem / @basefont;
         background: purple;
         margin: 11rem / @basefont 25rem / @basefont 7rem / @basefont 24rem / @basefont;
+        background: url('../images/classify.png') no-repeat;
+        background-size: 44rem / @basefont 70rem / @basefont;
     }
 
     .search {
-        flex: 1
+        flex: 1;
+
+        input {
+            width: 100%;
+            outline: none;
+            border: none;
+            margin-top: 12rem / @basefont;
+            border-radius: 33rem / @basefont;
+            padding-left: 55rem / @basefont;
+            height: 66rem / @basefont;
+            background: pink;
+            font-size: 25rem / @basefont;
+        }
     }
 
     .login {
         width: 75rem / @basefont;
         height: 70rem / @basefont;
         margin: 10rem / @basefont;
-        background: #000;
+        font-size: 20rem / @basefont;
+        line-height: 70rem / @basefont;
+        text-align: center;
+        color: #fff;
     }
 }
